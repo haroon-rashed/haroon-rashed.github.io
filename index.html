@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern portfolio</title>
+    <!-- ---------Font import ----------  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- ================== CSS Import ===========  -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+
+            emailjs.init({
+                publicKey: "DA8_nee1jF3v6YpQU",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+
+
+    <!-- ========== Cursor========= -->
+    <div id="cursor"></div>
+
+
+
+
+    <!-- ================= header =================== -->
+    <header id="header" class="header">
+
+        <div class="header-container container">
+            <div class="header-logo">
+                <div class="logo">
+                <span class="big-letter">H</span>
+                <span class="name">aroon</span>
+                </div>            </div>
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li><a href="#hero" class="header-link">Home</a></li>
+                    <li><a href="#about" class="header-link">About</a></li>
+                    <li><a href="#services" class="header-link">Services</a></li>
+                    <li><a href="#portfolio" class="header-link">portfolio</a></li>
+                    <li><a href="#contact" class="header-link">Contact Us</a></li>
+                </ul>
+                <div class="menu_icons">
+                    <div id="menuIcon" class="toggle">
+                        <i data-lucide="align-left"></i>
+                    </div>
+                    <div id="closeIcon">
+                        <i data-lucide="x"></i>
+                    </div>
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= Sticky Arrow =================== -->
+        <a href="#" class="upper-arow-sticky"> <i data-lucide="arrow-up"></i></i></a>
+        <!-- ================= Hero Section =================== -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container container">
+                <div class="bottom-scroll-arrow">
+                    <a href="#about">
+                        <i data-lucide="arrow-down"></i>
+                    </a>
+                </div>
+                <img src="./images/common/hero-light.png" class="light" alt="Decorative light effect" loading="lazy">
+                <div class="hero-left">
+                    <h1>Discover the <span class="highlight">Creative Work</span> of <span
+                            class="highlight">Haroon</span></h1>
+                    <p>I'm Haroon, crafting visually stunning websites with <span class="highlight">cutting-edge
+                            technology</span> for a seamless digital experience.</p>
+                    <div class="hero-btns">
+                        <a href="#portfolio" class="secondary-btn">Explore My Projects <i data-lucide="rocket"></i></a>
+                        <a href="./assets/resume.pdf" download class="primary-btn">Download Resume <i
+                                data-lucide="arrow-down-to-line"></i></a>
+                    </div>
+
+                </div>
+                <div class="hero-right">
+                    <img src="./images/common/hero-profile.png" alt="Profile picture of Haroon"  loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= About Section =================== -->
+        <section id="about" class="about-section">
+            <div class="about-light-img">
+
+                <img src="./images/common/hero-light.png" class="light" alt="Decorative light effect" loading="lazy">
+            </div>
+            <div class="rounded-wrapper">
+                <div class="rounded-div"></div>
+            </div>
+            <div class="container">
+                <div class="about-container">
+                    <div class="about-content" data-aos="fade-right">
+                        <h1 data-aos="fade-up" data-aos-delay="200">About Me <span><img class="highlight-star" src="./images/icons/Star.svg"
+                                    alt="Decorative star icon" loading="lazy"></span></h1>
+                        <p data-aos="fade-up" data-aos-delay="400">Hi, I’m Haroon, a passionate frontend developer specializing in the MERN stack with two years
+                            of hands-on experience. I thrive on crafting user-friendly, responsive web applications
+                            using React and enjoy turning complex problems into seamless user experiences. My expertise
+                            spans across the full stack, though I’m particularly drawn to building interactive and
+                            efficient interfaces that make digital products intuitive and enjoyable to use. I’m always
+                            excited to take on new challenges and continue growing my skills in the ever-evolving world
+                            of web development.</p>
+                        <a href="./assets/mycv.pdf" download class="primary-btn" data-aos="fade-up" data-aos-delay="600">Download CV</a>
+                    </div>
+                    <div class="about-image" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="profile-wrapper">
+                            <img src="./images/common/hero-profile1.png" alt="Haroon's personal image" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= services Section =================== -->
+        <section id="services" class="services-section">
+            <div class="rounded-wrapper1">
+                <div class="rounded-div1"></div>
+            </div>
+            <div class="container">
+                <div class="services-container">
+
+
+                    <div class="services-heading" data-aos="fade-up">
+
+                        <h2>Services <span><img class="highlight-star" src="./images/icons/Star.svg"
+                                    alt="Decorative star icon" loading="lazy"></span></h2>
+                        <h4 class="section-subtitle"> Why You Should <span class="highlight">Hire Me</span> For Your Next Project?</h4>
+                        <p class="section-description">
+                            I specialize in modern web development, using cutting-edge tools like React, Next.js, and
+                            the
+                            MERN stack to build high-performance, responsive web applications. Below are the key
+                            services I
+                            offer.
+                        </p>
+                    </div>
+
+                    <div class="services-grid">
+                        <!-- Service 1 -->
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon"><i data-lucide="monitor"></i></div>
+                            <h3>Web Development</h3>
+                            <p>Building fast, responsive websites using React and Next.js for optimal performance and
+                                SEO.
+                            </p>
+                        </div>
+
+                        <!-- Service 2 -->
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon"><i data-lucide="server"></i></div>
+                            <h3>Back-end Integration</h3>
+                            <p>Connecting web apps with RESTful APIs, GraphQL, Firebase, and other services for smooth
+                                data
+                                flow.</p>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon"><i data-lucide="git-branch"></i></div>
+                            <h3>State Management</h3>
+                            <p>Efficiently managing application state using Redux, Context API, or Zustand for scalable
+                                apps.</p>
+                        </div>
+
+                        <!-- Service 4 -->
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="icon"><i data-lucide="layout"></i></div>
+                            <h3>UI/UX Design</h3>
+                            <p>Creating intuitive user interfaces with custom animations and modern design principles.
+                            </p>
+                        </div>
+
+                        <!-- Service 5 -->
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                            <div class="icon"><i data-lucide="upload-cloud"></i></div>
+                            <h3>App Deployment</h3>
+                            <p>Deploying web apps on platforms like Vercel, Netlify, and AWS with continuous
+                                integration.
+                            </p>
+                        </div>
+
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                            <div class="icon"><i data-lucide="settings"></i></div>
+                            <h3>Testing and Optimization</h3>
+                            <p>Ensuring stability through testing, code optimization, and performance improvements.</p>
+                        </div>
+                    </div>
+
+                    <!-- Skills Marquee -->
+                    <div class="skills-marquee-container">
+                        <div class="skills-marquee">
+                            <span>React.js</span> <span>Next.js</span> <span>Node.js</span> <span>Express.js</span>
+                            <span>MongoDB</span> <span>Tailwind CSS</span> <span>TypeScript</span> <span>Docker</span>
+                            <span>Git</span> <span>Python</span> <span>Laravel</span> <span>RESTful APIs</span>
+                            <span>UI/UX Design</span> <span>Redux</span> <span>Firebase</span> <span>AWS</span>
+                            <!-- Duplicate for seamless loop -->
+                            <span>React.js</span> <span>Next.js</span> <span>Node.js</span> <span>Express.js</span>
+                            <span>MongoDB</span> <span>Tailwind CSS</span> <span>TypeScript</span> <span>Docker</span>
+                            <span>Git</span> <span>Python</span> <span>Laravel</span> <span>RESTful APIs</span>
+                            <span>UI/UX Design</span> <span>Redux</span> <span>Firebase</span> <span>AWS</span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= portfolio Section =================== -->
+
+        <!-- <!-- ================= portfolio Section =================== -- -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container portfolio-container">
+                <div class="portfolio-heading" data-aos="fade-up">
+
+                    <h2>My Work <span><img class="highlight-star" src="./images/icons/Star.svg"
+                                alt="Decorative star icon" loading="lazy"></span></h2>
+                    <h4 class="section-subtitle">Discover My Portfolio and See How My Work is  <span class="highlight">Done Right!</span></h4>
+                    <p class="section-description">
+                        I bring ideas to life through modern web development, crafting responsive, scalable, and optimized applications using the latest technologies like React, Next.js, and the MERN stack. Here are some of my top projects and accomplishments.
+                    </p>
+                </div>
+                <!-- project full stack  -->
+                <div class="portfolio-card" data-aos="fade-up">
+                    <div class="project-img">
+                        <img loading="lazy" src="./images/portfolio/multidental.png"
+                            alt="Full Stack E-commerce Multi Dental project image">
+                    </div>
+                    <div class="project-detail">
+                        <h2>Full-Stack E-commerce Multi Dental</h2>
+                        <p>Full-stack Dental E-commerce Website built using the MERN stack (MongoDB, Express, React, Node.js), providing a clean and professional interface for users to browse and purchase dental products. Users can securely sign up and log in using JWT authentication, explore the product catalog, filter items by category, and add products to their shopping cart. The platform includes Stripe API integration for secure online payments and an admin dashboard to manage products, orders, and users.
+
+Technologies Used</p>
+                        <a href="https://multidental.pk" target="_blank" class="hire-me-btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- project 2  -->
+               
+        
+                <div class="portfolio-card  row-reverse" data-aos="fade-up">
+                    <div class="project-img">
+                        <img loading="lazy" src="./images/portfolio/roadss.png" alt="EShoping project image">
+                    </div>
+                    <div class="project-detail">
+                        <h2>Road Smart Solutions</h2>
+                        <p>RoadSmart Solution is a full-stack web application developed using Laravel (backend) and Next.js (frontend) to provide a fast and scalable digital solution. The platform includes secure authentication, RESTful API integration, and a responsive user interface built with modern React architecture. It enables smooth communication between the frontend and backend while ensuring efficient data handling. The application is optimized for performance with improved database queries and clean backend logic. Its responsive design allows users to access the system easily across different devices, delivering a reliable and user-friendly experience.</p>
+                        <a href="https://customers-pink.vercel.app/" target="_blank" class="hire-me-btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- project 3  -->
+                <div class="portfolio-card" data-aos="fade-up">
+                    <div class="project-img">
+                        <img loading="lazy" src="./images/portfolio/quickcart.png"
+                            alt="Quick Cart project image">
+                    </div>
+                    <div class="project-detail">
+                        <h2>Quick Cart E-commerce Website</h2>
+                        <p>A modern full-stack e-commerce platform built with Next.js, Node.js, and Express, designed to deliver a fast and seamless online shopping experience. The application includes secure user authentication with Clerk, a dynamic shopping cart, and integrated payment functionality. It also features an admin dashboard for managing products, orders, and users efficiently. The interface is built with Material-UI and Tailwind, while Socket.io enables real-time updates, creating a responsive and smooth user experience across the platform.</p>
+                        <a href="https://quick-cart-mow1.vercel.app/" target="_blank" class="hire-me-btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- project 4  -->
+                <div class="portfolio-card row-reverse" data-aos="fade-up">
+                    <div class="project-img">
+                        <img loading="lazy" src="./images/portfolio/dashboard.png" alt="Admin Dashboard project image">
+                    </div>
+                    <div class="project-detail">
+                        <h2>Admin Dashboard</h2>
+                        <p>A modern frontend admin dashboard built with React.js, designed to provide a clean and efficient interface for managing application data and monitoring system activities. The dashboard features responsive layouts, reusable UI components, and intuitive navigation for a smooth user experience. Styled with Tailwind, Bootstrap, HTML, and CSS, it ensures fast performance and consistent design across different devices and screen sizes.</p>
+                        <a href="https://haroon-s-portfolio-8yqg.vercel.app/" target="_blank" class="hire-me-btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- project 5  -->
+                <div class="portfolio-card " data-aos="fade-up">
+                    <div class="project-img">
+                        <img loading="lazy" src="./images/portfolio/edusity.png" alt="Edusity project image">
+                    </div>
+                    <div class="project-detail">
+                        <h2>Edusity</h2>
+                        <p>The university web application, built with React.js and Context API, provides a dynamic platform for managing courses, faculty information, and student interactions efficiently. Users can explore academic programs, view faculty details, and access course-related information through a clean and responsive interface. The application ensures smooth navigation and organized data management, delivering a user-friendly experience across devices with a modern design implemented using HTML and CSS.</p>
+                        <a href="https://edusity-cyan.vercel.app/" target="_blank" class="hire-me-btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- project 6  -->
+                <div class="portfolio-card row-reverse" data-aos="fade-up">
+                    <div class="project-img">
+                        <img loading="lazy" src="./images/portfolio/tomato.png" alt="StayManager project image">
+                    </div>
+                    <div class="project-detail">
+                        <h2>Tomato Food delivery</h2>
+                        <p>A modern food delivery platform designed to provide a fast and convenient online ordering experience. The system allows users to browse food items, place orders easily, and track their deliveries in real-time. It also includes secure payment integration and a responsive interface, ensuring smooth navigation and reliable performance across different devices.</p>
+                        <a href="https://dashbord-proj1.vercel.app/" target="_blank" class="hire-me-btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- project 7  -->
+                <div class="portfolio-card" data-aos="fade-up">
+                    <div class="project-img">
+                        <img loading="lazy" src="./images/portfolio/gemini.png" alt="Google Gemin image">
+                    </div>
+                    <div class="project-detail">
+                        <h2>Google Gemini</h2>
+                        <p>A modern web application integrating Google Gemini AI to provide intelligent user assistance and automation features. The platform delivers a smooth and interactive experience with a responsive interface and dynamic animations. Built with React.js and Context API, the UI is styled using Tailwind CSS, HTML, and CSS, while Framer Motion enhances visual interactions. The application is deployed on Vercel for fast and reliable performance across devices.</p>
+                        <a href="https://google-gemini-five-brown.vercel.app/" target="_blank" class="hire-me-btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- project 8  -->
+                <div class="portfolio-card row-reverse" data-aos="fade-up">
+                    <div class="project-img">
+                        <img loading="lazy" src="./images/portfolio/ai.png"
+                            alt="Creative Digital portfolio project image">
+                    </div>
+                    <div class="project-detail">
+                        <h2>AI Content Generator</h2>
+                        <p>The AI Content Generator, built with Next.js and using PostgreSQL with the Gemini engine for its database, provides a sleek and modern interface for users to create AI-driven content. After signing in, users can select from various content templates and filter them by type, such as blogs, articles, or social media posts. The system includes an add-to-drafts option for saving work in progress and offers a real-time content preview, allowing users to make adjustments before finalizing and publishing their content.</p>
+                        <a href="https://ai-content-generator-generator.vercel.app/" target="_blank" class="hire-me-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= Experience Section =================== -->
+        <section id="experience" class="experience-section container">
+            <div class="experience-stats" data-aos="fade-up">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>1 year 6 months</h3>
+                    <p>Months Experience</p>
+                    <span>Active development experience</span>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>15+</h3>
+                    <p>Projects Completed</p>
+                    <span>Including personal and client work</span>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>2</h3>
+                    <p>Jobs</p>
+                    <span>Valuable industry exposure</span>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <h3>100%</h3>
+                    <p>Client Satisfaction</p>
+                    <span>On freelance projects</span>
+                </div>
+            </div>
+
+            <div class="section-heading" data-aos="fade-up">
+                <h2>Professional <span>Experience</span></h2>
+                <h4 class="section-subtitle">My journey through internships, training, and professional roles in web development</h4>
+            </div>
+
+            <div class="experience-grid">
+                <!-- Experience Card 1 -->
+                <div class="experience-card" data-aos="fade-up">
+                    <div class="exp-header">
+                        <h3 class="title">Mern Stack Developer</h3>
+                        <div class="company-info">
+                            <span class="company">Cloudtek</span> | <span class="location">I 10/3 Islamabad</span>
+                        </div>
+                        <div class="duration-type">
+                            <span>January 2025 - Present</span> | <span class="type">Full-time</span>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Working as a MERN Stack Developer, building responsive and dynamic user interfaces using React.js, Tailwind CSS, and JavaScript (ES6+)</li>
+                        <li>Implementing clean component architecture with optimized rendering performance</li>
+                        <li>Managing application state using Redux and Context API</li>
+                        <li>Integrating RESTful APIs using Axios for smooth data flow</li>
+                        <li>Authentication workflows using JWT and real-time features with WebSockets</li>
+                        <li>Using Git and GitHub for version control</li>
+                        <li>Collaborating with backend teams on scalable, production-ready features</li>
+                    </ul>
+                    <div class="skill-tags">
+                        <span class="tag">React Js</span>
+                        <span class="tag">Next Js</span>
+                        <span class="tag">Node Js</span>
+                        <span class="tag">Express Js</span>
+                        <span class="tag">Responsive Design</span>
+                        <span class="tag">Mongo DB</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Laravel</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                </div>
+
+                <!-- Experience Card 2 -->
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="exp-header">
+                        <h3 class="title">Web Developer Intern</h3>
+                        <div class="company-info">
+                            <span class="company">Outscalers</span> | <span class="location">Rawalpindi</span>
+                        </div>
+                        <div class="duration-type">
+                            <span>September 2024 - December 2024</span> | <span class="type">Internship</span>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Designed interactive websites using HTML, CSS, Bootstrap, JavaScript, and PHP</li>
+                        <li>Applied Object-Oriented Programming principles for backend development</li>
+                        <li>Built dynamic, user-friendly web solutions</li>
+                        <li>Collaborated with senior developers on real-world projects</li>
+                    </ul>
+                    <div class="skill-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">OOP</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= Testamonial Section =================== -->
+
+        <section class="testimonial container">
+            <div class="testimonial__container mySwiper " data-aos="fade-up" data-aos-duration="1000">
+                <div id="sec7" class="testimonial__content swiper-wrapper">
+
+
+                    <div class="testimonial__slide swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-profile">
+                                <img src="./images/testamonial/testi21.png" alt="client image">
+                            </div>
+                            <div class="client-review-stars">
+                                <i fill="yellow" data-lucide="star"></i>
+                                <i fill="yellow" data-lucide="star"></i>
+                                <i fill="yellow" data-lucide="star"></i>
+                                <i fill="yellow" data-lucide="star"></i>
+                                <i fill="yellow" data-lucide="star"></i>
+                            </div>
+                            <span class="testimonial__name">Amana Payan</span>
+                            <span class="testimonial__position">CEO Of Figma</span>
+                            <div class="quote_wrapper">
+                                <p class="testimonial__quote">
+                                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk
+                                    MTV quiz graced by fox whelps.
+                                </p>
+                                <i fill="yellow" data-lucide="quote"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="testimonial__slide swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-profile">
+                                <img src="./images/testamonial/testi21.png" alt="client image">
+                            </div>
+                            <div class="client-review-stars">
+                                <i fill="yellow" data-lucide="star"></i>
+                                <i fill="yellow" data-lucide="star"></i>
+                                <i fill="yellow" data-lucide="star"></i>
+                                <i fill="yellow" data-lucide="star"></i>
+                                <i fill="yellow" data-lucide="star"></i>
+                            </div>
+                            <span class="testimonial__name">Amana Payan</span>
+                            <span class="testimonial__position">CEO Of Figma</span>
+                            <div class="quote_wrapper">
+                                <p class="testimonial__quote">
+                                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk
+                                    MTV quiz graced by fox whelps.
+                                </p>
+                                <i fill="yellow" data-lucide="quote"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="testimonial__slide swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-profile">
+                                <img src="./images/testamonial/testi21.png" alt="client image">
+                            </div>
+                            <div class="client-review-stars">
+                                <i fill="yellow" data-lucide="star"></i>
+                                <i fill="yellow" data-lucide="star"></i>
+                                <i fill="yellow" data-lucide="star"></i>
+                                <i fill="yellow" data-lucide="star"></i>
+                                <i fill="yellow" data-lucide="star"></i>
+                            </div>
+                            <span class="testimonial__name">Amana Payan</span>
+                            <span class="testimonial__position">CEO Of Figma</span>
+                            <div class="quote_wrapper">
+                                <p class="testimonial__quote">
+                                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk
+                                    MTV quiz graced by fox whelps.
+                                </p>
+                                <i fill="yellow" data-lucide="quote"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+
+        <!-- ================= Contact Us Section =================== -->
+        <section id="contact" class="contact-section container">
+            <h2>Contact Me</h2>
+            <div class="circle-left">
+            </div>
+            <div class="circle-right">
+            </div>
+            <div class="contact-container ">
+
+
+
+                <form class="contact-form" id="contact-form" onsubmit="handleEmailSubmission(event)" data-aos="fade-up" data-aos-duration="1000">
+                    <input type="hidden" name="access_key" value="95f05b51-b212-4aee-8477-2662eb7f1aa2">
+                    <div class="inputs-wrapper">
+                        <div class="input-wrapper">
+                            <label for="name">Name</label>
+                            <input required type="text" id="name" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="email">Email</label>
+                            <input required type="email" id="email" name="email" placeholder="Your EMail">
+                        </div>
+                    </div>
+
+
+                    <div class="input-wrapper">
+                        <label for="phone">Phone number</label>
+                        <input required type="number" id="phone" name="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="message">Message</label>
+                        <textarea required name="message" id="message"></textarea>
+                    </div>
+
+
+                    <button type="submit" class="primary-btn">Submit</button>
+
+
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====================== Footer ========================== -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Column 1: Logo & Tagline -->
+                <div class="footer-col" data-aos="fade-up">
+                    <div class="footer-logo">
+                        <span class="logo-h">H</span>aroon
+                    </div>
+                    <p class="footer-tagline">
+                        Full-Stack Developer passionate about creating scalable web applications with MERN stack and Laravel. Currently pursuing BSCS at NUML Islamabad.
+                    </p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i data-lucide="mail"></i> haronworkspace@gmail.com</li>
+                        <li><i data-lucide="phone"></i> +92 300 9505 112</li>
+                        <li><i data-lucide="map-pin"></i> Islamabad, Pakistan</li>
+                        <li><i data-lucide="graduation-cap"></i> NUML Islamabad</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/haroon-rasheed" target="_blank" class="footer-social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/haroon-rasheed" target="_blank" class="footer-social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:haronworkspace@gmail.com" target="_blank" class="footer-social-icon">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+                <p class="copyright">© 2026 Haroon Rasheed. Available for freelance</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====================== Scripts ========================== -->
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <script src="./assets/swiper/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+        });
+    </script>
+
+
+</body>
+
+</html>
