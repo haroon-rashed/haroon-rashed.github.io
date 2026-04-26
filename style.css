@@ -390,7 +390,7 @@ a{
 .hero-right {
     flex: 1;
     display: flex;
-    align-items: end;
+    align-items: center;
     width: 100%;
     height: auto;
     justify-content: center;
@@ -398,8 +398,7 @@ a{
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('./herobackgound.png');
-    align-items: center;
+    background-image: none;  /* remove herobackground.png */
     border-radius: 50%;
 }
 
@@ -415,6 +414,42 @@ a{
 .hero-right img {
     width: 70%;
     height: auto;
+    filter: drop-shadow(0 0 30px rgba(238, 255, 0, 0.2))
+            drop-shadow(0 0 60px rgba(30, 144, 255, 0.1));
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 10%,
+        black 80%,
+        transparent 100%
+    ), linear-gradient(
+        to right,
+        transparent 0%,
+        black 5%,
+        black 95%,
+        transparent 100%
+    );
+    -webkit-mask-composite: destination-in;
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 10%,
+        black 80%,
+        transparent 100%
+    ), linear-gradient(
+        to right,
+        transparent 0%,
+        black 5%,
+        black 95%,
+        transparent 100%
+    );
+    mask-composite: intersect;
+    transition: filter 0.4s ease;
+}
+
+.hero-right img:hover {
+    filter: drop-shadow(0 0 50px rgba(238, 255, 0, 0.4)) 
+            drop-shadow(0 0 100px rgba(30, 144, 255, 0.2));
 }
 /* ============================
    About Section Styling
@@ -461,7 +496,7 @@ a{
 }
 
 .about-container .about-image {
-    background-image: url('./herobackgound.png');
+    background-image: none;
     flex: 1;
     background-size: contain;
     background-repeat: no-repeat;
@@ -483,17 +518,7 @@ a{
 
 .about-container .about-image .profile-wrapper::before,
 .about-container .about-image .profile-wrapper::after {
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 105%;
-    aspect-ratio: 1 / 1;
-    transform: translate(-50%, 40%) rotateX(72deg);
-    border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0 0 35px 12px #ff00ce, inset 0 0 20px 8px #ff00ce;
-    pointer-events: none;
+    display: none;
 }
 
 .about-container .about-image .profile-wrapper::before {
@@ -512,6 +537,35 @@ a{
     display: block;
     position: relative;
     z-index: 2;
+    filter: drop-shadow(0 0 20px rgba(238, 255, 0, 0.15));
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 15%,
+        black 75%,
+        transparent 100%
+    ), linear-gradient(
+        to right,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%
+    );
+    -webkit-mask-composite: destination-in;
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 15%,
+        black 75%,
+        transparent 100%
+    ), linear-gradient(
+        to right,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%
+    );
+    mask-composite: intersect;
 }
 
 .about-container .about-content {
