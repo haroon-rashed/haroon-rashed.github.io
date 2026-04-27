@@ -1361,7 +1361,8 @@ footer .footer_icons a:hover{
 
 /* Experience Section Styling */
 .experience-section {
-    padding: var(--section-padding) 0;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 
 .experience-stats {
@@ -1411,21 +1412,25 @@ footer .footer_icons a:hover{
 .experience-grid {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center the cards */
     gap: 4rem;
     margin-top: 5rem;
 }
 
 .experience-card {
-    padding: 4rem;
-    border-radius: 15px;
+    padding: 3.2rem 4rem;
+    border-radius: 45px; /* Match testimonial card radius */
     background: linear-gradient(145deg, var(--background-secondary), #2B3444);
     border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 20px rgba(250, 247, 255, 0.104); /* Match testimonial shadow */
     transition: var(--transition);
+    width: 100%;
+    max-width: 1000px; /* Limit width to look better on wide screens */
 }
 
 .experience-card:hover {
     border-color: var(--highlight-yellow);
-    box-shadow: 0 10px 30px rgba(238, 255, 0, 0.1);
+    box-shadow: 0 1px 20px rgba(250, 247, 255, 0.285); /* Match testimonial hover shadow */
     transform: translateY(-5px);
 }
 
