@@ -215,7 +215,7 @@ h4 { font-size: var(--font-size-h4); }
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 80;
+    z-index: 1111;
     cursor: pointer;
     color: #2d2e32;
     transition: all .5s ease;
